@@ -112,13 +112,6 @@
                         >Enviar oportunidad</a
                       >
                     </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link !text-[.85rem] !tracking-[normal]"
-                        href="login.html"
-                        >Acceder</a
-                      >
-                    </li>
                   </ul>
                   <!-- /.navbar-nav -->
                   <div class="offcanvas-footer xl:!hidden lg:!hidden">
@@ -327,7 +320,7 @@
                 <p
                   class="lead !leading-[1.65] text-[0.9rem] font-medium xl:!px-10 xxl:!px-10"
                 >
-                  Envía tu oportunidad para que la evaluemos.
+                  Regístrate y envía tu oportunidad.
                 </p>
                 <div class="flex justify-center gap-4 mt-10">
                   <a
@@ -354,407 +347,46 @@
 
         <section class="wrapper !bg-[#ffffff]">
           <div
-            class="container pt-16 xl:pt-20 lg:pt-20 md:pt-20 pb-16 xl:pb-20 lg:pb-20 md:pb-20"
+            class="container pt-12 xl:pt-20 lg:pt-20 md:pt-20 pb-16 xl:pb-20 lg:pb-20 md:pb-20"
           >
-            <div
-              class="xl:w-10/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mx-auto"
-            >
+            <div class="flex flex-wrap mx-[-15px] !text-center">
               <div
-                class="flex flex-wrap mx-[-15px] !mt-[-50px] xl:mx-[-35px] lg:mx-[-20px]"
+                class="xl:w-10/12 lg:w-10/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mx-auto"
               >
-                <div
-                  class="w-full flex-[0_0_auto] xl:!px-[35px] lg:!px-[20px] !px-[15px] max-w-full !mt-[50px] !mx-auto"
-                >
+                <div class="!relative">
+                  <div
+                    class="shape bg-dot red rellax !w-[6rem] !h-[8rem] absolute opacity-50 bg-[radial-gradient(#e2626b_2px,transparent_2.5px)]"
+                    data-rellax-speed="1"
+                    style="top: 1rem; left: -3.9rem"
+                  ></div>
+                  <div
+                    class="shape !rounded-[50%] bg-line primary rellax !w-[8rem] !h-[8rem] absolute opacity-50"
+                    data-rellax-speed="1"
+                    style="bottom: 2rem; right: -3rem"
+                  ></div>
                   <h2
-                    class="!text-[calc(1.305rem_+_0.66vw)] font-bold xl:!text-[1.8rem] !leading-[1.3] !mb-6 !text-center"
+                    class="!text-[calc(1.305rem_+_0.66vw)] font-bold xl:!text-[1.8rem] !leading-[1.3] !mb-4 xl:!px-[4.5rem] lg:!px-[4.5rem] pb-2"
                   >
-                    Formulario de oportunidad
+                    ¿Cómo enviar una oportunidad?
                   </h2>
-                  <form
-                    class="contact-form needs-validation"
-                    method="post"
-                    action="./assets/php/contact.php"
-                    novalidate
+                  <video
+                    poster="./assets/img/hero/hero.jpg"
+                    class="player relative z-[2] rounded-[0.4rem]"
+                    playsinline
+                    controls
+                    preload="none"
                   >
-                    <div class="messages"></div>
-                    <div class="flex flex-wrap mx-[-10px]">
-                      <!-- Dirección -->
-                      <div class="w-full flex-[0_0_auto] !px-[15px] max-w-full">
-                        <h3 class="!text-[1.2rem] !mb-4 !mt-6">Dirección</h3>
-                      </div>
-                      <div
-                        class="xl:w-4/12 lg:w-4/12 md:w-4/12 w-full flex-[0_0_auto] !px-[15px] max-w-full"
-                      >
-                        <div class="form-floating relative !mb-4">
-                          <select
-                            id="form_tipo_via"
-                            name="tipo_via"
-                            class="form-control relative block w-full text-[.75rem] font-medium !text-[#60697b] bg-[#fefefe] bg-clip-padding border shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] rounded-[0.4rem] border-solid border-[rgba(8,60,130,0.07)] transition-[border-color] duration-[0.15s] ease-in-out focus:shadow-[0_0_1.25rem_rgba(30,34,40,0.04),unset] focus-visible:!border-[rgba(63,120,224,0.5)] placeholder:!text-[#959ca9] placeholder:opacity-100 m-0 !pr-9 p-[.6rem_1rem] h-[calc(2.5rem_+_2px)] min-h-[calc(2.5rem_+_2px)] !leading-[1.25]"
-                            required
-                          >
-                            <option value="">Seleccione tipo de vía</option>
-                            <option value="ALAMEDA">Alameda</option>
-                            <option value="CALLE">Calle</option>
-                            <option value="CAMINO">Camino</option>
-                            <option value="CARRER">Carrer</option>
-                            <option value="CARRETERA">Carretera</option>
-                            <option value="GLORIETA">Glorieta</option>
-                            <option value="KALEA">Kalea</option>
-                            <option value="PASAJE">Pasaje</option>
-                            <option value="PASEO">Paseo</option>
-                            <option value="PLAÇA">Plaça</option>
-                            <option value="PLAZA">Plaza</option>
-                            <option value="RAMBLA">Rambla</option>
-                            <option value="RONDA">Ronda</option>
-                            <option value="RÚA">Rúa</option>
-                            <option value="SECTOR">Sector</option>
-                            <option value="TRAVESÍA">Travesía</option>
-                            <option value="URBANIZACIÓN">Urbanización</option>
-                            <option value="AVENIDA">Avenida</option>
-                            <option value="AVINGUDA">Avinguda</option>
-                            <option value="BARRIO">Barrio</option>
-                            <option value="CALLEJA">Calleja</option>
-                            <option value="CAMÍ">Camí</option>
-                            <option value="CAMPO">Campo</option>
-                            <option value="CARRERA">Carrera</option>
-                            <option value="CUESTA">Cuesta</option>
-                            <option value="EDIFICIO">Edificio</option>
-                            <option value="ENPARANTZA">Enparantza</option>
-                            <option value="ESTRADA">Estrada</option>
-                            <option value="JARDINES">Jardines</option>
-                            <option value="JARDINS">Jardins</option>
-                            <option value="PARQUE">Parque</option>
-                            <option value="PASSEIG">Passeig</option>
-                            <option value="PRAZA">Praza</option>
-                            <option value="PLAZUELA">Plazuela</option>
-                            <option value="PLACETA">Placeta</option>
-                            <option value="POBLADO">Poblado</option>
-                            <option value="VIA">Via</option>
-                            <option value="TRAVESSERA">Travessera</option>
-                            <option value="PASSATGE">Passatge</option>
-                            <option value="BULEVAR">Bulevar</option>
-                            <option value="POLÍGONO">Polígono</option>
-                          </select>
-                          <label
-                            for="form_tipo_via"
-                            class="!text-[#959ca9] !mb-2 !inline-block text-[.75rem] !absolute !z-[2] h-full overflow-hidden text-start text-ellipsis whitespace-nowrap pointer-events-none border origin-[0_0] px-4 py-[0.6rem] border-solid border-transparent left-0 top-0 font-Manrope"
-                            >Tipo de Vía *</label
-                          >
-                        </div>
-                      </div>
-                      <div
-                        class="xl:w-4/12 lg:w-4/12 md:w-4/12 w-full flex-[0_0_auto] !px-[15px] max-w-full"
-                      >
-                        <div class="form-floating relative !mb-4">
-                          <input
-                            id="form_nombre_via"
-                            type="text"
-                            name="nombre_via"
-                            class="form-control relative block w-full text-[.75rem] font-medium !text-[#60697b] bg-[#fefefe] bg-clip-padding border shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] rounded-[0.4rem] border-solid border-[rgba(8,60,130,0.07)] transition-[border-color] duration-[0.15s] ease-in-out focus:shadow-[0_0_1.25rem_rgba(30,34,40,0.04),unset] focus-visible:!border-[rgba(63,120,224,0.5)] placeholder:!text-[#959ca9] placeholder:opacity-100 m-0 !pr-9 p-[.6rem_1rem] h-[calc(2.5rem_+_2px)] min-h-[calc(2.5rem_+_2px)] !leading-[1.25]"
-                            placeholder=""
-                            required
-                          />
-                          <label
-                            for="form_nombre_via"
-                            class="!text-[#959ca9] !mb-2 !inline-block text-[.75rem] !absolute !z-[2] h-full overflow-hidden text-start text-ellipsis whitespace-nowrap pointer-events-none border origin-[0_0] px-4 py-[0.6rem] border-solid border-transparent left-0 top-0 font-Manrope"
-                            >Nombre de la Vía *</label
-                          >
-                        </div>
-                      </div>
-                      <div
-                        class="xl:w-2/12 lg:w-2/12 md:w-2/12 w-full flex-[0_0_auto] !px-[15px] max-w-full"
-                      >
-                        <div class="form-floating relative !mb-4">
-                          <input
-                            id="form_numero"
-                            type="text"
-                            name="numero"
-                            class="form-control relative block w-full text-[.75rem] font-medium !text-[#60697b] bg-[#fefefe] bg-clip-padding border shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] rounded-[0.4rem] border-solid border-[rgba(8,60,130,0.07)] transition-[border-color] duration-[0.15s] ease-in-out focus:shadow-[0_0_1.25rem_rgba(30,34,40,0.04),unset] focus-visible:!border-[rgba(63,120,224,0.5)] placeholder:!text-[#959ca9] placeholder:opacity-100 m-0 !pr-9 p-[.6rem_1rem] h-[calc(2.5rem_+_2px)] min-h-[calc(2.5rem_+_2px)] !leading-[1.25]"
-                            placeholder=""
-                            required
-                          />
-                          <label
-                            for="form_numero"
-                            class="!text-[#959ca9] !mb-2 !inline-block text-[.75rem] !absolute !z-[2] h-full overflow-hidden text-start text-ellipsis whitespace-nowrap pointer-events-none border origin-[0_0] px-4 py-[0.6rem] border-solid border-transparent left-0 top-0 font-Manrope"
-                            >Número *</label
-                          >
-                        </div>
-                      </div>
-                      <div
-                        class="xl:w-2/12 lg:w-2/12 md:w-2/12 w-full flex-[0_0_auto] !px-[15px] max-w-full"
-                      >
-                        <div class="form-floating relative !mb-4">
-                          <input
-                            id="form_adicional"
-                            type="text"
-                            name="adicional"
-                            class="form-control relative block w-full text-[.75rem] font-medium !text-[#60697b] bg-[#fefefe] bg-clip-padding border shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] rounded-[0.4rem] border-solid border-[rgba(8,60,130,0.07)] transition-[border-color] duration-[0.15s] ease-in-out focus:shadow-[0_0_1.25rem_rgba(30,34,40,0.04),unset] focus-visible:!border-[rgba(63,120,224,0.5)] placeholder:!text-[#959ca9] placeholder:opacity-100 m-0 !pr-9 p-[.6rem_1rem] h-[calc(2.5rem_+_2px)] min-h-[calc(2.5rem_+_2px)] !leading-[1.25]"
-                            placeholder=""
-                          />
-                          <label
-                            for="form_adicional"
-                            class="!text-[#959ca9] !mb-2 !inline-block text-[.75rem] !absolute !z-[2] h-full overflow-hidden text-start text-ellipsis whitespace-nowrap pointer-events-none border origin-[0_0] px-4 py-[0.6rem] border-solid border-transparent left-0 top-0 font-Manrope"
-                            >Adicional</label
-                          >
-                        </div>
-                      </div>
-                      <div
-                        class="xl:w-3/12 lg:w-3/12 md:w-3/12 w-full flex-[0_0_auto] !px-[15px] max-w-full"
-                      >
-                        <div class="form-floating relative !mb-4">
-                          <input
-                            id="form_codigo_postal"
-                            type="text"
-                            name="codigo_postal"
-                            class="form-control relative block w-full text-[.75rem] font-medium !text-[#60697b] bg-[#fefefe] bg-clip-padding border shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] rounded-[0.4rem] border-solid border-[rgba(8,60,130,0.07)] transition-[border-color] duration-[0.15s] ease-in-out focus:shadow-[0_0_1.25rem_rgba(30,34,40,0.04),unset] focus-visible:!border-[rgba(63,120,224,0.5)] placeholder:!text-[#959ca9] placeholder:opacity-100 m-0 !pr-9 p-[.6rem_1rem] h-[calc(2.5rem_+_2px)] min-h-[calc(2.5rem_+_2px)] !leading-[1.25]"
-                            placeholder=""
-                            required
-                          />
-                          <label
-                            for="form_codigo_postal"
-                            class="!text-[#959ca9] !mb-2 !inline-block text-[.75rem] !absolute !z-[2] h-full overflow-hidden text-start text-ellipsis whitespace-nowrap pointer-events-none border origin-[0_0] px-4 py-[0.6rem] border-solid border-transparent left-0 top-0 font-Manrope"
-                            >Código Postal *</label
-                          >
-                        </div>
-                      </div>
-                      <div
-                        class="xl:w-4/12 lg:w-4/12 md:w-4/12 w-full flex-[0_0_auto] !px-[15px] max-w-full"
-                      >
-                        <div class="form-floating relative !mb-4">
-                          <input
-                            id="form_localidad"
-                            type="text"
-                            name="localidad"
-                            class="form-control relative block w-full text-[.75rem] font-medium !text-[#60697b] bg-[#fefefe] bg-clip-padding border shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] rounded-[0.4rem] border-solid border-[rgba(8,60,130,0.07)] transition-[border-color] duration-[0.15s] ease-in-out focus:shadow-[0_0_1.25rem_rgba(30,34,40,0.04),unset] focus-visible:!border-[rgba(63,120,224,0.5)] placeholder:!text-[#959ca9] placeholder:opacity-100 m-0 !pr-9 p-[.6rem_1rem] h-[calc(2.5rem_+_2px)] min-h-[calc(2.5rem_+_2px)] !leading-[1.25]"
-                            placeholder=""
-                            required
-                          />
-                          <label
-                            for="form_localidad"
-                            class="!text-[#959ca9] !mb-2 !inline-block text-[.75rem] !absolute !z-[2] h-full overflow-hidden text-start text-ellipsis whitespace-nowrap pointer-events-none border origin-[0_0] px-4 py-[0.6rem] border-solid border-transparent left-0 top-0 font-Manrope"
-                            >Localidad *</label
-                          >
-                        </div>
-                      </div>
-                      <div
-                        class="xl:w-5/12 lg:w-5/12 md:w-5/12 w-full flex-[0_0_auto] !px-[15px] max-w-full"
-                      >
-                        <div class="form-floating relative !mb-4">
-                          <input
-                            id="form_provincia"
-                            type="text"
-                            name="provincia"
-                            class="form-control relative block w-full text-[.75rem] font-medium !text-[#60697b] bg-[#fefefe] bg-clip-padding border shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] rounded-[0.4rem] border-solid border-[rgba(8,60,130,0.07)] transition-[border-color] duration-[0.15s] ease-in-out focus:shadow-[0_0_1.25rem_rgba(30,34,40,0.04),unset] focus-visible:!border-[rgba(63,120,224,0.5)] placeholder:!text-[#959ca9] placeholder:opacity-100 m-0 !pr-9 p-[.6rem_1rem] h-[calc(2.5rem_+_2px)] min-h-[calc(2.5rem_+_2px)] !leading-[1.25]"
-                            placeholder=""
-                            required
-                          />
-                          <label
-                            for="form_provincia"
-                            class="!text-[#959ca9] !mb-2 !inline-block text-[.75rem] !absolute !z-[2] h-full overflow-hidden text-start text-ellipsis whitespace-nowrap pointer-events-none border origin-[0_0] px-4 py-[0.6rem] border-solid border-transparent left-0 top-0 font-Manrope"
-                            >Provincia *</label
-                          >
-                        </div>
-                      </div>
-
-                      <!-- Detalles del inmueble -->
-                      <div class="w-full flex-[0_0_auto] !px-[15px] max-w-full">
-                        <h3 class="!text-[1.2rem] !mb-4 !mt-6">
-                          Detalles del inmueble
-                        </h3>
-                      </div>
-                      <div
-                        class="xl:w-4/12 lg:w-4/12 md:w-4/12 w-full flex-[0_0_auto] !px-[15px] max-w-full"
-                      >
-                        <div class="form-floating relative !mb-4">
-                          <input
-                            id="form_precio"
-                            type="number"
-                            name="precio"
-                            step="0.01"
-                            class="form-control relative block w-full text-[.75rem] font-medium !text-[#60697b] bg-[#fefefe] bg-clip-padding border shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] rounded-[0.4rem] border-solid border-[rgba(8,60,130,0.07)] transition-[border-color] duration-[0.15s] ease-in-out focus:shadow-[0_0_1.25rem_rgba(30,34,40,0.04),unset] focus-visible:!border-[rgba(63,120,224,0.5)] placeholder:!text-[#959ca9] placeholder:opacity-100 m-0 !pr-9 p-[.6rem_1rem] h-[calc(2.5rem_+_2px)] min-h-[calc(2.5rem_+_2px)] !leading-[1.25]"
-                            placeholder=""
-                            required
-                          />
-                          <label
-                            for="form_precio"
-                            class="!text-[#959ca9] !mb-2 !inline-block text-[.75rem] !absolute !z-[2] h-full overflow-hidden text-start text-ellipsis whitespace-nowrap pointer-events-none border origin-[0_0] px-4 py-[0.6rem] border-solid border-transparent left-0 top-0 font-Manrope"
-                            >Precio Estimado (€) *</label
-                          >
-                        </div>
-                      </div>
-                      <div
-                        class="xl:w-4/12 lg:w-4/12 md:w-4/12 w-full flex-[0_0_auto] !px-[15px] max-w-full"
-                      >
-                        <div class="form-floating relative !mb-4">
-                          <input
-                            id="form_area"
-                            type="number"
-                            name="area"
-                            step="0.01"
-                            class="form-control relative block w-full text-[.75rem] font-medium !text-[#60697b] bg-[#fefefe] bg-clip-padding border shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] rounded-[0.4rem] border-solid border-[rgba(8,60,130,0.07)] transition-[border-color] duration-[0.15s] ease-in-out focus:shadow-[0_0_1.25rem_rgba(30,34,40,0.04),unset] focus-visible:!border-[rgba(63,120,224,0.5)] placeholder:!text-[#959ca9] placeholder:opacity-100 m-0 !pr-9 p-[.6rem_1rem] h-[calc(2.5rem_+_2px)] min-h-[calc(2.5rem_+_2px)] !leading-[1.25]"
-                            placeholder=""
-                            required
-                          />
-                          <label
-                            for="form_area"
-                            class="!text-[#959ca9] !mb-2 !inline-block text-[.75rem] !absolute !z-[2] h-full overflow-hidden text-start text-ellipsis whitespace-nowrap pointer-events-none border origin-[0_0] px-4 py-[0.6rem] border-solid border-transparent left-0 top-0 font-Manrope"
-                            >Área (m2) *</label
-                          >
-                        </div>
-                      </div>
-                      <div
-                        class="xl:w-4/12 lg:w-4/12 md:w-4/12 w-full flex-[0_0_auto] !px-[15px] max-w-full"
-                      >
-                        <div class="form-floating relative !mb-4">
-                          <select
-                            id="form_tipo_inmueble"
-                            name="tipo_inmueble"
-                            class="form-control relative block w-full text-[.75rem] font-medium !text-[#60697b] bg-[#fefefe] bg-clip-padding border shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] rounded-[0.4rem] border-solid border-[rgba(8,60,130,0.07)] transition-[border-color] duration-[0.15s] ease-in-out focus:shadow-[0_0_1.25rem_rgba(30,34,40,0.04),unset] focus-visible:!border-[rgba(63,120,224,0.5)] placeholder:!text-[#959ca9] placeholder:opacity-100 m-0 !pr-9 p-[.6rem_1rem] h-[calc(2.5rem_+_2px)] min-h-[calc(2.5rem_+_2px)] !leading-[1.25]"
-                            required
-                          >
-                            <option value="">
-                              Seleccione tipo de inmueble
-                            </option>
-                            <option value="CASA">Casa</option>
-                            <option value="APARTAMENTO">Apartamento</option>
-                            <option value="PISO">Piso</option>
-                            <option value="CHALET">Chalet</option>
-                            <option value="ATICO">Ático</option>
-                            <option value="DUPLEX">Dúplex</option>
-                            <option value="ESTUDIO">Estudio</option>
-                            <option value="LOFT">Loft</option>
-                            <option value="ADOSADO">Adosado</option>
-                            <option value="FINCA">Finca</option>
-                            <option value="OFICINA">Oficina</option>
-                            <option value="LOCAL">Local</option>
-                            <option value="NAVE">Nave</option>
-                            <option value="GARAJE">Garaje</option>
-                            <option value="TRASTERO">Trastero</option>
-                            <option value="TERRENO">Terreno</option>
-                            <option value="EDIFICIO">Edificio</option>
-                            <option value="ALMACEN">Almacén</option>
-                            <option value="OTRO">Otro</option>
-                          </select>
-                          <label
-                            for="form_tipo_inmueble"
-                            class="!text-[#959ca9] !mb-2 !inline-block text-[.75rem] !absolute !z-[2] h-full overflow-hidden text-start text-ellipsis whitespace-nowrap pointer-events-none border origin-[0_0] px-4 py-[0.6rem] border-solid border-transparent left-0 top-0 font-Manrope"
-                            >Tipo de Inmueble *</label
-                          >
-                        </div>
-                      </div>
-                      <div
-                        class="xl:w-4/12 lg:w-4/12 md:w-4/12 w-full flex-[0_0_auto] !px-[15px] max-w-full"
-                      >
-                        <div class="form-floating relative !mb-4">
-                          <select
-                            id="form_estado_inmueble"
-                            name="estado_inmueble"
-                            class="form-control relative block w-full text-[.75rem] font-medium !text-[#60697b] bg-[#fefefe] bg-clip-padding border shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] rounded-[0.4rem] border-solid border-[rgba(8,60,130,0.07)] transition-[border-color] duration-[0.15s] ease-in-out focus:shadow-[0_0_1.25rem_rgba(30,34,40,0.04),unset] focus-visible:!border-[rgba(63,120,224,0.5)] placeholder:!text-[#959ca9] placeholder:opacity-100 m-0 !pr-9 p-[.6rem_1rem] h-[calc(2.5rem_+_2px)] min-h-[calc(2.5rem_+_2px)] !leading-[1.25]"
-                            required
-                          >
-                            <option value="">
-                              Seleccione estado del inmueble
-                            </option>
-                            <option value="NUEVO">Obra nueva</option>
-                            <option value="REFORMADO">Recién reformado</option>
-                            <option value="BUENO">Buen estado</option>
-                            <option value="REFORMAR">A reformar</option>
-                          </select>
-                          <label
-                            for="form_estado_inmueble"
-                            class="!text-[#959ca9] !mb-2 !inline-block text-[.75rem] !absolute !z-[2] h-full overflow-hidden text-start text-ellipsis whitespace-nowrap pointer-events-none border origin-[0_0] px-4 py-[0.6rem] border-solid border-transparent left-0 top-0 font-Manrope"
-                            >Estado del Inmueble *</label
-                          >
-                        </div>
-                      </div>
-                      <div
-                        class="xl:w-4/12 lg:w-4/12 md:w-4/12 w-full flex-[0_0_auto] !px-[15px] max-w-full"
-                      >
-                        <div class="form-floating relative !mb-4">
-                          <select
-                            id="form_tipo_oportunidad"
-                            name="tipo_oportunidad"
-                            class="form-control relative block w-full text-[.75rem] font-medium !text-[#60697b] bg-[#fefefe] bg-clip-padding border shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] rounded-[0.4rem] border-solid border-[rgba(8,60,130,0.07)] transition-[border-color] duration-[0.15s] ease-in-out focus:shadow-[0_0_1.25rem_rgba(30,34,40,0.04),unset] focus-visible:!border-[rgba(63,120,224,0.5)] placeholder:!text-[#959ca9] placeholder:opacity-100 m-0 !pr-9 p-[.6rem_1rem] h-[calc(2.5rem_+_2px)] min-h-[calc(2.5rem_+_2px)] !leading-[1.25]"
-                            required
-                          >
-                            <option value="">
-                              Seleccione tipo de oportunidad
-                            </option>
-                            <option value="OPORTUNIDAD">Oportunidad</option>
-                            <option value="COINVERSION">Coinversión</option>
-                            <option value="PROYECTO">Proyecto</option>
-                          </select>
-                          <label
-                            for="form_tipo_oportunidad"
-                            class="!text-[#959ca9] !mb-2 !inline-block text-[.75rem] !absolute !z-[2] h-full overflow-hidden text-start text-ellipsis whitespace-nowrap pointer-events-none border origin-[0_0] px-4 py-[0.6rem] border-solid border-transparent left-0 top-0 font-Manrope"
-                            >Tipo de Oportunidad *</label
-                          >
-                        </div>
-                      </div>
-
-                      <!-- Comentarios -->
-                      <div class="w-full flex-[0_0_auto] !px-[15px] max-w-full">
-                        <div class="form-floating relative !mb-4">
-                          <textarea
-                            id="form_comentarios"
-                            name="comentarios"
-                            class="form-control relative block w-full text-[.75rem] font-medium !text-[#60697b] bg-[#fefefe] bg-clip-padding border shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] rounded-[0.4rem] border-solid border-[rgba(8,60,130,0.07)] transition-[border-color] duration-[0.15s] ease-in-out focus:shadow-[0_0_1.25rem_rgba(30,34,40,0.04),unset] focus-visible:!border-[rgba(63,120,224,0.5)] placeholder:!text-[#959ca9] placeholder:opacity-100 m-0 !pr-9 p-[.6rem_1rem] h-[calc(2.5rem_+_2px)] min-h-[calc(2.5rem_+_2px)] !leading-[1.25]"
-                            placeholder=""
-                            style="height: 150px"
-                          ></textarea>
-                          <label
-                            for="form_comentarios"
-                            class="!text-[#959ca9] !mb-2 !inline-block text-[.75rem] !absolute !z-[2] h-full overflow-hidden text-start text-ellipsis whitespace-nowrap pointer-events-none border origin-[0_0] px-4 py-[0.6rem] border-solid border-transparent left-0 top-0 font-Manrope"
-                            >Comentarios</label
-                          >
-                        </div>
-                      </div>
-
-                      <!-- Términos y condiciones -->
-                      <div class="w-full flex-[0_0_auto] !px-[15px] max-w-full">
-                        <div
-                          class="form-check block min-h-[1.36rem] !pl-[1.55rem] !mb-4"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            value=""
-                            id="invalidCheck"
-                            required
-                          />
-                          <label class="form-check-label" for="invalidCheck">
-                            Acepto los
-                            <a href="#" class="hover">términos y condiciones</a
-                            >.
-                          </label>
-                          <div class="invalid-feedback">
-                            Debes aceptar los términos y condiciones.
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Botón de envío -->
-                      <div class="w-full flex-[0_0_auto] !px-[15px] max-w-full">
-                        <input
-                          type="submit"
-                          class="btn btn-primary !text-white !bg-[#3f78e0] border-[#3f78e0] hover:text-white hover:bg-[#3f78e0] hover:!border-[#3f78e0] active:text-white active:bg-[#3f78e0] active:border-[#3f78e0] disabled:text-white disabled:bg-[#3f78e0] disabled:border-[#3f78e0] !rounded-[50rem] btn-send !mb-3 hover:translate-y-[-0.15rem] hover:shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.15)]"
-                          value="Enviar oportunidad"
-                        />
-                        <p class="!text-[#aab0bc]">
-                          <strong>*</strong> Estos campos son obligatorios.
-                        </p>
-                      </div>
-                    </div>
-                  </form>
-                  <!-- /form -->
+                    <source src="./assets/img/hero/hero.mp4" type="video/mp4" />
+                    <source
+                      src="./assets/img/hero/hero.webm"
+                      type="video/webm"
+                    />
+                  </video>
                 </div>
-                <!--/column -->
               </div>
-              <!--/.row -->
+              <!--/column -->
             </div>
-            <!-- /column -->
           </div>
-          <!-- /.container -->
         </section>
         <!-- /section -->
       </div>
